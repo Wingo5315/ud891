@@ -34,7 +34,7 @@
         button.tabIndex = "-1";
       }
 
-      // What about here?
+      button.addAttribute('aria-checked', 'true');
     }
 
   }
