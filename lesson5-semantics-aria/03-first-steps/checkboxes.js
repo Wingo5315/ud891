@@ -19,8 +19,7 @@
 
     this.el.addEventListener('keydown', this.handleKeyDown.bind(this));
     this.el.addEventListener('click', this.toggle.bind(this));
-
-    // Any other set-up we want to do here?
+    this.el.removeAttribute('checked');
   }
 
   Checkbox.prototype.handleKeyDown = function(e) {
@@ -37,10 +36,10 @@
     if (this.el.hasAttribute('checked')) {
       this.el.removeAttribute('checked');
 
-      // Hmm.
+      this.el.setAttribute('checked', 'false');
 
     } else {
-      this.el.setAttribute('checked', '');
+      this.el.setAttribute('checked', 'true');
 
       // Hmmmmm.
 
