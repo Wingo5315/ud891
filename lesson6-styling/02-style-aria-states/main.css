@@ -35,7 +35,7 @@ main {
   content: '▶';
 }
 
-.disclosure-button.expanded .icon::after {
+.disclosure-button [aria-expanded="true"] .icon::after {
   content: '▼';
 }
 
